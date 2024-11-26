@@ -1,0 +1,97 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+   
+}
+
+body{
+    display: flex;
+}
+
+.image-container{
+    position: relative;
+    display: inline-block;
+}
+
+.background{
+    width: 80vh;
+    height: 100vh;
+    display: block;
+}
+
+.logo{
+    width: 60px; 
+    height: auto;
+    margin-right: 10px
+    }
+
+    .center{
+        position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -180%);
+      display: flex;
+      align-items: center;
+      border-top: 2px solid black; 
+      border-bottom: 2px solid black; 
+      padding: 10px 20px; 
+    }
+
+.odin{
+    font-family: my-cool-font;
+    src: url('../img/Norse-Bold.otf');
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.text{
+    padding-top: 100px;
+    padding-left: 50px;
+   border-top: 2px solid #E5E7EB;
+    border-bottom: 2px solid #E5E7EB;
+    font-family: my-cool-font;
+    src: url('../img/Norse-Bold.otf');
+}
+
+.form-grid{
+    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.form-row {
+    display: grid;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+
+
+button {
+    grid-column: span 3;
+    padding: 10px;
+    background-color: #596D48;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    color: #596D48;
+    font-size: 15px;
+}
+
+#errorMessage {
+    color: red;
+    display: none;
+}
